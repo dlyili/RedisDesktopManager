@@ -57,9 +57,9 @@ SOURCES += $$SIMDJSONDIR/simdjson.cpp
 
 
 win32* {
-    ZLIBDIR = $$PWD/zlib-msvc14-x64.1.2.11.7795/build/native    
+    ZLIBDIR = $$PWD/zlib    
     INCLUDEPATH += $$ZLIBDIR/include
-    LIBS += $$ZLIBDIR/lib_release/zlibstatic.lib $$LZ4DIR/build/cmake/Release/lz4.lib
+    LIBS += $$ZLIBDIR/lib/zlibstatic.lib $$LZ4DIR/build/cmake/Release/lz4.lib
     LIBS += $$ZSTDDIR/build/cmake/lib/Release/zstd_static.lib
     LIBS += $$SNAPPYDIR/Release/snappy.lib
     LIBS += -L$$BROTLIDIR/Release/ -lbrotlicommon-static -lbrotlidec-static -lbrotlienc-static
